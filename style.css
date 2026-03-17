@@ -1,18 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
 }
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .align-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .justify-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.header {
+  top: 0;
+  z-index: 10;
+  height: 44px;
+  position: fixed;
+  inset-inline: 0;
+  column-gap: 24px;
+  background-color: white;
+}
+.header-link {
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.header-icon {
+  width: 30px;
+}
+.banner {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  padding: 16px 31px;
+  margin-top: 44px;
+}
+.hero {
+  width: 100vw;
+  height: 692px;
+  text-align: center;
+  margin-bottom: 12px;
+  flex-direction: column;
+  padding: 55px 36px;
+  background-position: center;
+  background-size: co;
+}
+.hero-iphone-16-pro {
+  background-image: url(./iphone16pro.png);
+}
+.hero-iphone-16 {
+  background-image: url(./iphone16.png);
+}
+.hero-gift-magic {
+  background-image: url(./giftmagic.png);
+  justify-content: flex-end;
+}
+.hero-title {
+  font-size: 52px;
+  color: white;
+  font-weight: 600;
+}
+.hero-subtitle {
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  margin: 16px 20px;
+}
+.hero-buttons {
+  column-gap: 16px;
+  display: flex;
+}
+.button {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: solid #0071e3 1px;
+}
+.button-lm {
+  color: white;
+  background-color: #0071e3;
+}
+
+.button-buy {
+  color: #0071e3;
+  border: solid #0071e3 1px;
+  background-color: transparent;
+}
+.dark-title {
+  color: black;
+}
+.products {
+  gap: 12px;
+  display: grid;
+  margin-bottom: 12px;
+  grid-auto-rows: 580px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product {
+  flex-direction: column;
+  padding: 48px 0 58px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ipad {
+  background-image: url(./ipad.png);
+}
+.airpods {
+  background-image: url(./airpods.png);
+  justify-content: end;
+}
+.watch {
+  background-image: url(watch.png);
+}
+.macbook {
+  background-image: url(./macbook.png);
+}
+.trade-in {
+  background-image: url(./tradein.png);
+}
+.card {
+  background-image: url(card.png);
+}
+.product-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+.product-subtitle {
+    font-size: 18px;
+    padding: 2px 0 16px;
+}
+.white-title {
+    color: white;
+}
+.text {
+    background: linear-gradient(90.43deg, #0090F7 0%, #BA62FC 33.33%, #F2416B 66.67%, #F55600 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
