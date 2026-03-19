@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Inter", serif;
+}
+.layout {
+  padding: 0 140px;
 }
 .center {
   display: flex;
@@ -34,4 +39,124 @@
 }
 .header-icon {
   width: 30px;
+}
+.banner {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 31px;
+  margin-top: 44px;
+}
+.store {
+  display: flex;
+  justify-content: space-between;
+}
+.store-header {
+  column-gap: 32px;
+}
+.rainbow {
+  color: transparent;
+  background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.header-title {
+  font-size: 44px;
+  font-weight: 700;
+}
+.header-subtitle {
+  font-size: 44px;
+  font-weight: 700;
+  color: #6e6e73;
+}
+.store-support {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
+}
+.support-title {
+  display: flex;
+  column-gap: 16px;
+  justify-content: space-between;
+}
+.support-icon {
+  width: 35px;
+  height: 35px;
+}
+.support-header {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0066cc;
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.product {
+  width: 136px;
+  height: 145px;
+  padding: 16px 8px;
+}
+.product-img {
+  width: 120px;
+  height: 78px;
+}
+.product-name {
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 18px;
+  text-align: center;
+}
+.lt-header {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.lt-header-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.lt-header-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card {
+  width: 400px;
+  height: 500px;
+  padding: 30px;
+  display: flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  row-gap: 12px;
+  border-radius: 18px;
+  flex-direction: column;
+  scroll-snap-align: start;
+  box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.white-text {
+  color: white;
+}
+.lt-card {
+  width: 100vw;
+  display: flex;
+  column-gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.lt-card::-webkit-scrollbar {
+  display: none;
 }

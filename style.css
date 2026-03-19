@@ -41,7 +41,6 @@
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  color: black;
   padding: 16px 31px;
   margin-top: 44px;
 }
@@ -53,7 +52,6 @@
   flex-direction: column;
   padding: 55px 36px;
   background-position: center;
-  background-size: co;
 }
 .hero-iphone-16-pro {
   background-image: url(./iphone16pro.png);
@@ -192,7 +190,7 @@
   border: none;
 }
 .dots {
-  margin-top: 14px;
+  margin: 14px 0;
 }
 .dot {
   width: 8px;
@@ -206,14 +204,13 @@
 .carousel {
   display: flex;
   overflow-x: auto;
-  padding-top: 15px;
 }
 .carousel::-webkit-scrollbar {
   display: none;
 }
 .group {
   gap: 10px;
-  animation: spin 15s infinite linear;
+  animation: spin 20s infinite linear;
   padding-right: 10px;
 }
 .card {
@@ -224,8 +221,6 @@
 .card-detail {
   justify-content: space-between;
   padding: 18px;
-}
-.card-image-small {
 }
 .card-image {
   width: 200px;
@@ -258,4 +253,31 @@
   to {
     translate: -100%;
   }
+}
+.carousel:hover .card{
+  filter: grayscale(100%);
+}
+.carousel:hover .card:hover {
+  filter: grayscale(0%);
+}
+
+.card-overlay {
+  inset: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.listen-now {
+  border: none;
+  margin-top: 20px;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background-color: white;
+  position: absolute;
+  display: none;
+}
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+.card-overlay:hover .listen-now {
+  display: block;
 }
