@@ -30,58 +30,82 @@ body {
   position: fixed;
   inset-inline: 0;
   column-gap: 24px;
-  background-color: white;
+  background-color: #f5f5f7;
 }
+
 .header-link {
   font-size: 12px;
   font-weight: 400;
   white-space: nowrap;
   text-decoration: none;
 }
+
+.header-icons {
+  column-gap: 24px;
+}
+
 .header-icon {
   width: 30px;
 }
-.banner {
-  text-align: center;
+
+.menu-icon {
+  display: none;
+}
+.donation-banner {
   font-size: 14px;
+  margin-top: 44px;
+  color: black;
   font-weight: 500;
   padding: 16px 31px;
-  margin-top: 44px;
+  text-align: center;
 }
-.hero {
+.hero-container {
   width: 100vw;
   height: 692px;
   text-align: center;
   margin-bottom: 12px;
   flex-direction: column;
-  padding: 55px 36px;
+  background-size: cover;
+  padding-block: 55px 36px;
   background-position: center;
+  background-repeat: no-repeat;
 }
-.hero-iphone-16-pro {
-  background-image: url(./iphone16pro.png);
+
+.hero-container-iphone-16-pro {
+  background-image: url("./iphone16pro.png");
 }
-.hero-iphone-16 {
-  background-image: url(./iphone16.png);
+
+.hero-container-iphone-16 {
+  background-image: url("./iphone16.png");
 }
-.hero-gift-magic {
-  background-image: url(./giftmagic.png);
+
+.hero-container-gift-magic {
   justify-content: flex-end;
+  background-image: url("./giftmagic.png");
 }
+
 .hero-title {
   font-size: 52px;
   color: white;
   font-weight: 600;
 }
-.hero-subtitle {
+.hero-subhead {
   font-size: 24px;
   color: white;
   font-weight: 400;
-  margin: 16px 20px;
+  margin-block: 16px 20px;
 }
-.hero-buttons {
-  column-gap: 16px;
+
+.hero-title-dark {
+  color: #000;
+}
+
+.hero-buttons,
+.product-buttons {
   display: flex;
+  column-gap: 16px;
 }
+
 .button {
   cursor: pointer;
   padding: 12px 20px;
@@ -89,18 +113,16 @@ body {
   text-decoration: none;
   border: solid #0071e3 1px;
 }
-.button-lm {
-  color: white;
+
+.button-primary {
+  color: #fff;
   background-color: #0071e3;
 }
 
-.button-buy {
+.button-secondary {
   color: #0071e3;
   border: solid #0071e3 1px;
   background-color: transparent;
-}
-.dark-title {
-  color: black;
 }
 .products {
   gap: 12px;
@@ -258,7 +280,7 @@ body {
     translate: -100%;
   }
 }
-.carousel:hover .card{
+.carousel:hover .card {
   filter: grayscale(100%);
 }
 .carousel:hover .card:hover {
@@ -284,4 +306,140 @@ body {
 }
 .card-overlay:hover .listen-now {
   display: block;
+}
+@media (max-width: 1279px) {
+  .header {
+    height: 48px;
+    justify-content: space-between;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  .header-icons {
+    column-gap: 0;
+  }
+
+  .header-icon {
+    width: 48px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .donation-banner {
+    margin-top: 48px;
+    padding-block: 12px;
+  }
+
+  .hero-container {
+    height: 650px;
+    padding-top: 50px;
+  }
+
+  .hero-container-iphone-16-pro {
+    background-image: url("./iphone16pro-tablet.jpg");
+  }
+
+  .hero-container-iphone-16 {
+    background-image: url("./iphone16-tablet.png");
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subhead {
+    margin-block: 4px 16px;
+  }
+  .products {
+    gap: 12px;
+    display: grid;
+    margin-bottom: 12px;
+    grid-auto-rows: 580px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-block: 53px;
+    flex-direction: column;
+    padding-block: 48px 58px;
+  }
+  .product-title {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .product-subtitle {
+    font-size: 18px;
+    padding-block: 2px 16px;
+  }
+}
+@media (max-width: 768px) {
+  .products {
+    grid-auto-rows: 490px;
+  }
+
+  .product {
+    padding-block: 42px;
+  }
+
+  .product-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .product-subtitle {
+    font-size: 18px;
+  }
+
+  .slide {
+    width: 689px;
+    height: 368px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    height: 500px;
+  }
+
+  .hero-container-iphone-16-pro {
+    justify-content: flex-end;
+    background-image: url("./iphone16-mobile.png");
+  }
+
+  .hero-container-iphone-16 {
+    background-image: url("./iphone16pro-mobile.png");
+  }
+
+  .hero-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .hero-buttons  {
+    column-gap: 12px;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    padding-block: 46px;
+  }
+
+  .slide {
+    width: 274px;
+    height: 495px;
+  }
 }
