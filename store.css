@@ -6,8 +6,7 @@
   padding: 0;
   font-family: "Inter", serif;
 }
-.layout {
-  padding: 0 140px;
+body {
   overflow-x: hidden;
   background-color: #f5f5f7;
 }
@@ -31,23 +30,34 @@
   position: fixed;
   inset-inline: 0;
   column-gap: 24px;
-  background-color: white;
+  background-color: #f5f5f7;
 }
+
 .header-link {
   font-size: 12px;
   font-weight: 400;
   white-space: nowrap;
   text-decoration: none;
 }
+
+.header-icons {
+  column-gap: 24px;
+}
+
 .header-icon {
   width: 30px;
 }
-.banner {
-  text-align: center;
+
+.menu-icon {
+  display: none;
+}
+.donation-banner {
   font-size: 14px;
+  margin-top: 44px;
+  color: black;
   font-weight: 500;
   padding: 16px 31px;
-  margin-top: 44px;
+  text-align: center;
 }
 .store {
   display: flex;
@@ -157,13 +167,12 @@
   column-gap: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  padding-right: 280px;
 }
 .list-card::-webkit-scrollbar {
   display: none;
 }
 .list {
-  margin:  30px 0;
+  margin: 30px 0;
 }
 .help-card {
   width: 480px;
@@ -187,7 +196,6 @@
   column-gap: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  padding-right: 280px;
 }
 .help-header {
   font-size: 12px;
@@ -203,4 +211,31 @@
 }
 .card-list::-webkit-scrollbar {
   display: none;
+}
+@media (max-width: 1279px) {
+  .header {
+    height: 48px;
+    justify-content: space-between;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  .header-icons {
+    column-gap: 0;
+  }
+
+  .header-icon {
+    width: 48px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .donation-banner {
+    margin-top: 48px;
+    padding-block: 12px;
+  }
 }
