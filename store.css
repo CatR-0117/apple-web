@@ -9,6 +9,7 @@
 body {
   overflow-x: hidden;
   background-color: #f5f5f7;
+  padding: 0 140px;
 }
 .center {
   display: flex;
@@ -167,6 +168,7 @@ body {
   column-gap: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  padding-right: 280px;
 }
 .list-card::-webkit-scrollbar {
   display: none;
@@ -196,6 +198,7 @@ body {
   column-gap: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  padding-right: 280px;
 }
 .help-header {
   font-size: 12px;
@@ -211,31 +214,4 @@ body {
 }
 .card-list::-webkit-scrollbar {
   display: none;
-}
-@media (max-width: 1279px) {
-  .header {
-    height: 48px;
-    justify-content: space-between;
-  }
-
-  .header-link {
-    display: none;
-  }
-
-  .header-icons {
-    column-gap: 0;
-  }
-
-  .header-icon {
-    width: 48px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .donation-banner {
-    margin-top: 48px;
-    padding-block: 12px;
-  }
 }

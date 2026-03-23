@@ -97,7 +97,7 @@ body {
 }
 
 .hero-title-dark {
-  color: #000;
+  color: black;
 }
 
 .hero-buttons,
@@ -409,13 +409,13 @@ body {
   }
 
   .hero-container-iphone-16-pro {
-    justify-content: flex-end;
     background-image: url("./iphone16-mobile.png");
   }
 
   .hero-container-iphone-16 {
     background-image: url("./iphone16pro-mobile.png");
   }
+
 
   .hero-title {
     font-size: 30px;
