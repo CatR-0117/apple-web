@@ -415,6 +415,7 @@ display: flex-end;
 
   .hero-container-iphone-16 {
     background-image: url("./iphone16-mobile.png");
+    justify-content: flex-end;
   }
 
 
