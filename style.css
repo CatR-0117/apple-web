@@ -408,13 +408,13 @@ body {
     height: 500px;
   }
 
-  .hero-container-iphone-16-pro {
-    background-image: url("./iphone16-mobile.png");
-    justify-content: flex-end;
+ .hero-container-iphone-16-pro {
+    background-image: url("./iphone16pro-mobile.png");
+        justify-content: flex-end;
   }
 
   .hero-container-iphone-16 {
-    background-image: url("./iphone16pro-mobile.png");
+    background-image: url("./iphone16-mobile.png");
   }
 
 
