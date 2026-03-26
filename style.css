@@ -410,11 +410,11 @@ body {
 
   .hero-container-iphone-16-pro {
 display: flex-end;
-    background-image: url("./iphone16pro-mobile.png");
+    background-image: url("./iphone16-mobile.png");
   }
 
   .hero-container-iphone-16 {
-    background-image: url("./iphone16-mobile.png");
+    background-image: url("./iphone16pro-mobile.png");
     justify-content: flex-end;
   }
 
