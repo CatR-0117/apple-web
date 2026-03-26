@@ -409,7 +409,6 @@ body {
   }
 
   .hero-container-iphone-16-pro {
-display: flex-end;
     background-image: url("./iphone16-mobile.png");
     justify-content: flex-end;
   }
